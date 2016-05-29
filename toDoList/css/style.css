@@ -1,0 +1,52 @@
+*{
+	font-family: 'Ubuntu', sans-serif;
+	color: cyan;
+	background: black;
+}
+
+.wrapper{
+	width: 600px;
+	margin: 10% 0 0 20%;
+}
+
+
+.item-list li{
+	width: 500px;
+	list-style-type: none;
+	margin-bottom: 20px;
+	font-size: 25px;
+	line-height: 50px;
+	border-bottom: 1px solid cyan;
+}
+
+.controlls{
+	width: 150px;
+	height: 150px;
+}
+
+.item-add{
+	height: 50px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.item-value{
+	box-sizing: border-box;
+	height: 50px;
+	line-height: 50px;
+	width: 550px;
+	text-indent: 15px;
+	color: gray;
+	border-radius: 5px;
+	outline: none;
+}
+
+.item-value:focus{
+	text-shadow: 0px 0px 3px blue;
+}
+
+.item-delete{
+	margin-right: 20px;
+	float: left;
+	color: red;
+}

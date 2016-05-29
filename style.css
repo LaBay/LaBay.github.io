@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	margin: 50px 0 0 100px;
+	font-size: 35px;
+
+}
+
+ul{
+	margin: 50px 0 0 150px;
+
+}
+
+li{
+	height: 40px;
+	width: 350px;
+	line-height: 40px;
+	text-indent: 15px;
+	list-style-type: none;
+	margin-bottom: 30px;
+	font-size: 25px;
+	background: orange;
+	border-radius: 10px;
+	transition: 0.5s;
+
+}
+
+li:hover{
+	box-shadow: 0px 0px 5px black;
+	text-indent: 25px;
+
+	width: 360px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-style: italic;
+
+}

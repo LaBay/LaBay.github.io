@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zazor</title>
+	<link rel="shortcut icon" href="background/tireico.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="wrapper"> 
+		<div class="upperMenu">
+			<a class="phone"></a>
+			<a class="phoneNumbers">(044)123-45-67 (044)567-89-10</a>
+				<div class="upperMenuForm">
+					<form>
+						<input class="firstInput" type="text" name="login" placeholder="логин">
+						<input type="password" name="password" placeholder="пароль">
+						<a class="enter" href="#">вход</a>
+						<a class="registration" href="#">регистрация</a>
+						<a class="forgotPassword" href="#">забыли пароль?</a>
+					</form>
+				</div>
+			<div class="icons">
+				<div class="icons-item1"><a href="#"></a></div>
+				<div class="icons-item2"><a href="#"></a></div>
+				<div class="icons-item3"><a href="#"></a></div>
+			</div>
+		</div>
+		<header>
+			<div class="logo">
+				<a href="#"></a>
+			</div>
+			<div class="middleMenu">
+				<a href="#">О КОМПАНИИ</a>
+				<a href="#">ОПЛАТА</a>
+				<a href="#">ДОСТАВКА</a>
+				<a href="#">СТАТЬИ</a>
+				<a href="#">КОНТАКТЫ</a>
+				<span class="cart"></span>
+				<span>товаров: </span>
+				<span id="quantity">0</span>
+				<span>на сумму: </span>
+				<span id="amount">0,00 грн.</span>
+			</div>
+		</header>
+		<section class="searchForms">
+			<h1>searchForms</h1>
+			<form class="carSearch">
+				
+				<p class="carSearch-items"><span id="carSearch-item1"> Диски:</span><span id="carSearch-item2">Поиск по автомобилю</span><span id="carSearch-item3">Шины:</span></p>
+
+				<div class="left">
+					<p><label><span class="main">Марка </span><span class="auxiliary">авто:</span></label><input list="mark"></p>
+					<p><label><span class="main">Модель </span><span class="auxiliary">автомобиля:</span></label><input list="model"></p>
+					<p><label><span class="main">Год выпуска </span><span class="auxiliary">автомобиля:</span></label><input class="year" list="year"></p>
+					<p><label><span class="main">Комплектация:</span></label><input class="option" list="option"></p>
+				</div>
+
+				<div class="right">
+					<p><label><span class="main">Марка </span><span class="auxiliary">авто:</span></label><input list="mark"></p>
+					<p><label><span class="main">Модель </span><span class="auxiliary">автомобиля:</span></label><input list="model"></p>
+					<p><label><span class="main">Год выпуска </span><span class="auxiliary">автомобиля:</span></label><input class="year" list="year"></p>
+					<p><label><span class="main">Комплектация:</span></label><input class="option" list="option"></p>
+				</div>
+
+				<a href="#">поиск...</a>
+
+				<datalist id="mark">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</datalist>
+
+				<datalist id="model">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</datalist>
+
+				<datalist id="year">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</datalist>
+
+				<datalist id="option">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</datalist>
+
+				</form>
+			<form class="tireSearch">
+				
+				<span>поиск шин</span>
+				<p class="size" ><label>Размер:</label><input class="size1" list="size"><span>/</span><input class="size2" list="size"></p>
+				<p class="R"><label>R</label><input  list="R"></p>
+				<p>Сезон:<label><input id="summer" type="checkbox" name="summer" value="summer">лето</label></p>
+				<p><label class="tireSearchCheckbox"><input type="checkbox" name="winter" value="winter">зима</label></p>
+				<p><label class="tireSearchCheckbox"><input type="checkbox" name="allseasons" value="allseasons">всесез</label></p>
+				<a href="#">поиск...</a>
+				
+				<datalist id="size">
+					<option value="145">145</option>
+					<option value="146">146</option>
+					<option value="147">147</option>
+					<option value="148">148</option>
+					<option value="149">149</option>
+				</datalist>
+
+				<datalist id="R">
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+				</datalist>
+			</form>
+			<form class="rimSearch">
+				<span id="rimSearchHeader">поиск дисков</span>
+				<p class="diameter" ><label><span class="main">Диаметр </span><span class="auxiliary">диска:</span></label><input list="diameter"></p>
+				<p class="quantity"><label><span class="main">Количество <br></span><span class="auxiliary">крепежных <br> отверстий:</span></label><input  
+				list="quant"></p>
+				<p class="diameterQuantity"><label><span class="main">Диаметр </span><span class="auxiliary"><br>расположения<br>крепежных <br>отверстий:</span></label><input  list="diameterQuantity"></p>
+				<div class="horBorderEl"></div>
+				<div class="rimSearchScnd">
+					<span>ДЦО</span>
+					<p><u>(диаметр <br> центрльного <br> отверстия):</u></p>
+					<input list="diameter">
+					<span>ЕТ</span>
+					<p>(вылет диска):</p>
+					<input list="diameter">
+					<a href="#">поиск...</a>
+
+				</div>
+
+				<datalist id="diameter">
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+				</datalist>
+
+				<datalist id="quant">
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</datalist>
+
+				<datalist id="diameterQuantity">
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+				</datalist>
+
+			</form>
+
+		</section>
+		<main>
+			<nav class="catalog">
+				<div>
+					<div class="paperIcon"></div>
+					<h3>каталог продукции:</h3>
+				</div>
+				<ul> 
+					<h4>
+						<div class="circle"></div>
+						ШИНЫ
+					</h4>
+					<li><a>Наименование 1</a></li>
+					<li><a>Наименование 2</a></li>
+					<li><a>Наименование 3</a></li>
+					<li><a>Наименование 4</a></li>
+				</ul>
+				<ul> 
+					<h4>
+						<div class="circle"></div>
+						ДИСКИ
+					</h4>
+					<li><a>Наименование 1</a></li>
+					<li><a>Наименование 2</a></li>
+					<li><a>Наименование 3</a></li>
+					<li><a>Наименование 4</a></li>
+				</ul>
+				<ul> 
+					<h4>
+						<div class="circle"></div>
+						БОЛТЫ
+					</h4>
+					<li><a>Наименование 1</a></li>
+					<li><a>Наименование 2</a></li>
+					<li><a>Наименование 3</a></li>
+					<li><a>Наименование 4</a></li>
+				</ul>
+				
+			</nav>
+			<div class="goods">
+				
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Goodyear</p>
+						<p class="modelName">Ultra Grip Extreme</p>
+					</figcaption>
+						<img src="img/img1.png" alt="tire image">
+						<p class="price">90.00 <small>грн.</small></p>
+				</figure>
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Nokian</p>
+						<p class="modelName">Hakkapeliitta R</p>
+					</figcaption>
+						<img src="img/img2.png" alt="tire image">
+						<p class="price">115.00 <small>грн.</small></p>
+				</figure>
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Hankook</p>
+						<p class="modelName">K 708 155/65 R14</p>
+					</figcaption>
+						<img src="img/img3.png" alt="tire image">
+						<p class="price">393.00 <small>грн.</small></p>
+				</figure>								
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Goodyear</p>
+						<p class="modelName">Ultra Grip Extreme</p>
+					</figcaption>
+						<img src="img/img1.png" alt="tire image">
+						<p class="price">90.00 <small>грн.</small></p>
+				</figure>
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Nokian</p>
+						<p class="modelName">Hakkapeliitta R</p>
+					</figcaption>
+						<img src="img/img2.png" alt="tire image">
+						<p class="price">115.00 <small>грн.</small></p>
+				</figure>
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Hankook</p>
+						<p class="modelName">K 708 155/65 R14</p>
+					</figcaption>
+						<img src="img/img3.png" alt="tire image">
+						<p class="price">393.00 <small>грн.</small></p>
+				</figure>
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Goodyear</p>
+						<p class="modelName">Ultra Grip Extreme</p>
+					</figcaption>
+						<img src="img/img1.png" alt="tire image">
+						<p class="price">90.00 <small>грн.</small></p>
+				</figure>
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Nokian</p>
+						<p class="modelName">Hakkapeliitta R</p>
+					</figcaption>
+						<img src="img/img2.png" alt="tire image">
+						<p class="price">115.00 <small>грн.</small></p>
+				</figure>
+
+				<figure>
+					<figcaption>
+						<p class="manufacturer">Hankook</p>
+						<p class="modelName">K 708 155/65 R14</p>
+					</figcaption>
+						<img src="img/img3.png" alt="tire image">
+						<p class="price">393.00 <small>грн.</small></p>
+				</figure>
+
+			</div>
+			<nav class="brand">
+								<div>
+					<div class="paperIcon"></div>
+					<h3>БРЕНДЫ:</h3>
+				</div>
+				<ul> 
+					<h4>
+						<div class="circle"></div>
+						ШИНЫ
+					</h4>
+					<li><label><input type="checkbox">Бренд 1</label></li>
+					<li><label><input type="checkbox">Бренд 2</label></li>
+					<li><label><input type="checkbox">Бренд 3</label></li>
+				</ul>
+				<ul> 
+					<h4>
+						<div class="circle"></div>
+						ДИСКИ
+					</h4>
+					<li><label><input type="checkbox">Бренд 1</label></li>
+					<li><label><input type="checkbox">Бренд 2</label></li>
+					<li><label><input type="checkbox">Бренд 3</label></li>
+				</ul>
+					<button class="chooseBtn">ВЫБРАТЬ</button>
+			</nav>
+			<div class="logoBar">
+				<div></div>
+			</div>
+		<footer>
+			<ul>
+				<li><a href="#">О компании</a></li>
+				<li>|</li>
+				<li><a href="#">Доставка</a></li>
+				<li>|</li>
+				<li><a href="#">Статьи</a></li>
+				<li>|</li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+				<span>Создание сайта © Global Vision</span>	
+		</footer>
+		</main>
+	</div>
+</body>
+</html>

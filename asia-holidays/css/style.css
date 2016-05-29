@@ -1,0 +1,209 @@
+@font-face{
+	font-family: Tahoma-Regular;
+	src: url(../fonts/Tahoma-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0; 
+}
+
+body {
+	width: 1280px;
+	height: 1060px;
+	background-image: url(../backgrounds/background1.png);
+	background-repeat: no-repeat;
+	font-family: Tahoma-Regular;
+}
+
+.container {
+	margin-left: 150px;
+	width: 1001px;
+	height: 442px;
+
+}
+
+.upperMenu {
+	height: 175px;
+	}
+
+.ourContacts {
+	list-style-type: none;
+	color: #4b9db4;
+	margin: 5px 33px 0 0;
+	float: right;
+	clear: right;
+	font-size: 12px;
+	line-height: 1.65;
+}
+
+.ourContacts li:first-child{
+		font-weight: bold;
+	letter-spacing: 0.4px;
+	line-height: 1.7;
+}
+.ourContacts li:last-child{
+	line-height: 1.4;
+}
+
+
+.countries {
+	height: 55px;
+	width: 360px;
+	margin: 33px 8px; 
+	float: right;
+	clear: right;
+	font-size: 10px;
+}
+
+.countries li {
+	display: inline;
+	width: 55.5px;
+	padding-left: 1px;
+	float: left;
+	text-align: center;
+	color: #4b9db4;
+}
+
+.countries a {
+	color: #4b9db4;
+}
+
+.emptyDiv {
+	height: 238px;
+}
+
+	/* Here CSS of Middle menu begins  */
+
+nav{
+	
+	height: 32px;
+}
+
+.middleMenu *{
+	list-style-type: none;
+	font-size: 14px;
+}
+
+.middleMenu {
+	margin-left: 1px;
+
+}
+
+.middleMenu li {
+	display: inline-block;
+	float: left;
+	width: 142.85px;
+	text-align: center;
+}
+
+.middleMenu  ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 29px;
+}
+
+ul.middleMenu li {
+    position: relative;
+}
+
+ul.middleMenu li a {
+    display: block;
+    padding: 6px 0 6px 0;
+    margin-left: -2px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+    box-shadow: 0 3px 3px #343434;
+}
+
+.middleMenu a{
+	 border-bottom: 1px solid black;
+}
+
+.submenu a{
+	 border-bottom: none;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 142.85px;
+    top: 29px;
+    left: 0;
+    background-color: white;
+}
+
+ul.submenu li {
+    display: block;
+}
+
+ul.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+    box-shadow: 0px 5px 5px #343434;
+}
+
+ul.middleMenu li:hover ul.submenu {
+   display: block;
+   border-top: 1px solid black;
+}
+
+nav:after{
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
+.triangleSymbol{
+	font-size: 10px;
+}
+
+
+	/* Here CSS of Middle menu ends  */
+
+
+
+
+.left,
+.right{
+	width: 210px;
+	height: 542px;
+	background-color: #edeef0;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #424c43;
+}
+
+.left{
+	float: left;
+	margin-left: 1px;
+	border-right: 1px solid #c7cacf;
+}
+
+
+
+.right{
+	float: right;
+	border-left: 1px solid #c7cacf;
+	text-align: center;
+}
+
+.right h1,
+.left h1{
+	font-size: 18pt;
+}
+
+footer{
+	padding-top: 7px;
+	clear: both;
+	color: #cbdae4;
+	font-size: 12px;
+	text-align: center;
+}

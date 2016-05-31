@@ -697,6 +697,10 @@ main{
 	margin: 0px 24px 23px 0px;
 }
 
+figure:hover{
+	cursor: pointer;
+}
+
 .manufacturer{
 	margin-bottom: -9px;
 	font-size: 14.59px;

@@ -36,7 +36,9 @@ li:hover{
 	width: 360px;
 }
 
-a{
+a{	
+	width: 100%;
+	display: inline-block;
 	text-decoration: none;
 	color: black;
 	font-style: italic;

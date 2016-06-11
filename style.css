@@ -10,37 +10,63 @@ h1{
 
 }
 
-ul{
+.projects{
 	margin: 50px 0 0 150px;
-
 }
 
 li{
+	list-style-type: none;
+}
+
+
+.projects li{
 	height: 40px;
 	width: 350px;
 	line-height: 40px;
 	text-indent: 15px;
-	list-style-type: none;
 	margin-bottom: 30px;
 	font-size: 25px;
 	background: orange;
 	border-radius: 10px;
 	transition: 0.5s;
-
 }
 
-li:hover{
+.projects li:hover{
 	box-shadow: 0px 0px 5px black;
 	text-indent: 25px;
-
 	width: 360px;
 }
 
-a{	
-	width: 100%;
+a{
 	display: inline-block;
 	text-decoration: none;
 	color: black;
+	transition: 0.5s;
+}
+
+.projects a{	
+	width: 100%;
 	font-style: italic;
+}
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	padding-left: 150px;
+	line-height: 50px;
+	width: 100%;
+	background-color: #248cec;
+
+}
+
+footer li{
+	display: inline-block;
+	margin-right: 50px;
+	font-style: normal;
+}
+
+footer a:hover{
+	color: orange;
 
 }

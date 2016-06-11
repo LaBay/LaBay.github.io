@@ -21,7 +21,7 @@ li{
 
 .projects li{
 	height: 40px;
-	width: 350px;
+	width: 370px;
 	line-height: 40px;
 	text-indent: 15px;
 	margin-bottom: 30px;
@@ -34,7 +34,7 @@ li{
 .projects li:hover{
 	box-shadow: 0px 0px 5px black;
 	text-indent: 25px;
-	width: 360px;
+	width: 380px;
 }
 
 a{

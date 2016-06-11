@@ -41,7 +41,6 @@ a{
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-	transition: 0.5s;
 }
 
 .projects a{	
@@ -64,6 +63,10 @@ footer li{
 	display: inline-block;
 	margin-right: 50px;
 	font-style: normal;
+}
+
+footer a{
+	transition: 0.5s;
 }
 
 footer a:hover{

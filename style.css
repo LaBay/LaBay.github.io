@@ -49,7 +49,7 @@ a{
 }
 
 footer{
-	position: absolute;
+	position: fixed;
 	bottom: 5px;
 	height: 50px;
 	padding-left: 150px;

@@ -1,23 +1,8 @@
-/*@mixin media_size{
-
-	@media screen and (min-width: $desktop){
-		min-width: $desktop;
-	};
-
-	@media screen and (max-width: $tablet){
-		min-width: $tablet;
-		max-width: ($desktop - 1);
-	};
-
-	@media screen and (max-width: ($tablet - 1)){
-		min-width: $mobile;
-		max-width: ($tablet - 1);
-	};
-
-}*/
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  transition: 0.5s;
+}
 
 /* GLOBAL */
 @media screen and (min-width: 1px) {

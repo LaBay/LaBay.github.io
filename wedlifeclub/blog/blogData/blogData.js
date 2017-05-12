@@ -44,7 +44,8 @@ var blogData = [
 					<br> дата статьи,
 					<br> текст статьи
 				<br> ] 
-				<br> Как-то такая задумка...`
+				<br> Как-то такая задумка...
+				<br> <a href="https://github.com/LaBay/LaBay.github.io/tree/master/wedlifeclub/blog" target="_blank">Ссылка на гитхаб</a>`
 
 
 	],

@@ -135,7 +135,7 @@ function Undo() {
 
 	RedoLines[RedoLines.length] = Lines[Lines.length - 1];
 	Lines.length = Lines.length - 1;
-	this.checker = Lines.length + RedoLines.length;
+	Undo.checker = Lines.length + RedoLines.length;
 
 	clearCanvas();
 	CanvasDrow();

@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#canvasEditor{
+	margin: 0;
+	padding: 0;
+	cursor: crosshair;
+	border:1px solid #000000;
+}
+
+.wrapper{
+	
+	display: block;
+	position: static;
+}
+
+.menu{
+	position: static;
+	display: block;
+	float: left;
+}
+
+
+#canvasSizer{
+	position: fixed;
+	top: 200px; 
+	left: 300px;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+}
+
+
+.display{
+	display: block;
+}
+
+.notDisplay{
+	display: none;
+}
+
+input{
+	border-radius: 5px;
+}
+
+input[type="number"]{
+	
+	/*border: 1px solid gray;*/
+	text-indent: 3px;
+}
+
+input[type="button"]{
+
+	padding-left: 2px;
+	padding-right: 2px;
+	cursor: pointer;
+}
+
+input[type="color"]{
+	cursor: pointer;
+}

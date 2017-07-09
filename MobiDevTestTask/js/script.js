@@ -64,7 +64,9 @@ function converting() {
 
 function prewiew() {
 
+	clearCanvas();
 	Drow(Line.x1,Line.y1,Line.x2,Line.y2, Line.width, Line.color);
+	CanvasDrow();
 
 }
 

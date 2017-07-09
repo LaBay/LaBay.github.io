@@ -115,7 +115,7 @@ function showCords(x, y) {
 }
 
 function handDrow() {
-
+	Line.width = document.getElementById("lineWidth").value;
 	Line.color = document.getElementById("lineColor").value;
 	Line.x1 = document.getElementById("beginningX").value;
 	Line.y1 = document.getElementById("beginningY").value;

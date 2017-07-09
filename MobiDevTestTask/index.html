@@ -21,6 +21,8 @@
 				Set the coordinates of the line's end<br>
 				<input id="endX" type="number" placeholder="X="> <input id="endY" type="number" placeholder="Y=">
 				<br>
+				Set line's width (non-negative number)<br>
+				<input id="lineWidth" type="number" value="1"><br>
 				Press to set the color of the line
 				<input id="lineColor" type="color" value="#ff0000"><br>
 				<input type="button" value="Draw" onclick="handDrow()"> 
@@ -33,12 +35,13 @@
 
 			</form> 
 
-				<form id="canvasSizer" class="notDisplay">
+			<form id="canvasSizer" class="notDisplay">
 
-					<input id="width" type="number" placeholder="Set Canvas' width" value="800"> <input id="height" type="number" placeholder="Set Canvas' height" value="400">
-					<input type="button" value="Accept" onclick="canvasSizer()"><input type="button" value="Cancel" onclick="hideCanvasSizer()">
-					
-				</form>
+				<input id="width" type="number" placeholder="Set Canvas' width" value="800">
+				<input id="height" type="number" placeholder="Set Canvas' height" value="400">
+				<input type="button" value="Accept" onclick="canvasSizer()"><input type="button" value="Cancel" onclick="hideCanvasSizer()">
+				
+			</form>
 			
 		</div>
 

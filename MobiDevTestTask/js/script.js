@@ -4,31 +4,13 @@ var RedoLines = [];
 
 var Line = {};
 
-function openCanvasSizer() {
-	document.getElementById('canvasSizer').className = "display";
-}
-
-function canvasSizer(width, height){
-	width = document.getElementById("width").value;
-	height = document.getElementById("height").value;
-	document.getElementById("canvasEditor").width = width;
-	document.getElementById("canvasEditor").height = height;
-	document.getElementById('canvasSizer').className = "notDisplay";
-
-	CanvasDrow();
-}
-
-function hideCanvasSizer(){
-	document.getElementById('canvasSizer').className = "notDisplay";
-
-}
-
 function resetObjValues() {
 	Line = {
 	x1: "",
 	y1: "",
 	x2: "",
 	y2: "",
+	width: 1,
 	color: 0,
 	isTheFirstClick: true,
 	begCoordsSetted: false,
@@ -55,6 +37,7 @@ function getCoordsHover() {
 function getCoordsClick() {
 
 		Line.color = document.getElementById("lineColor").value;
+		Line.width = document.getElementById("lineWidth").value;
 
 		if(Line.isTheFirstClick){
 
@@ -75,29 +58,30 @@ function getCoordsClick() {
 
 function converting() {
 
-	Lines[Lines.length] = [Line.x1, Line.y1, Line.x2, Line.y2, Line.color];
+	Lines[Lines.length] = [Line.x1, Line.y1, Line.x2, Line.y2, Line.width, Line.color];
 	
 }
 
 function prewiew() {
 
-	Drow(Line.x1,Line.y1,Line.x2,Line.y2,Line.color);
+	Drow(Line.x1,Line.y1,Line.x2,Line.y2, Line.width, Line.color);
 
 }
 
-function Drow(x1, y1, x2, y2, color) {
+function Drow(x1, y1, x2, y2, width, color) {
 	var canvasEditor = document.getElementById("canvasEditor");
 	var ctx = canvasEditor.getContext("2d");
 	ctx.beginPath();
 	ctx.moveTo(x1,y1);
 	ctx.lineTo(x2,y2);
+	ctx.lineWidth = width;
 	ctx.strokeStyle = color;
 	ctx.stroke();
 }
 
 function CanvasDrow() {
 	for (var i = 0; i < Lines.length; i++) {
-		Drow(Lines[i][0],Lines[i][1],Lines[i][2],Lines[i][3],Lines[i][4])
+		Drow(Lines[i][0],Lines[i][1],Lines[i][2],Lines[i][3],Lines[i][4],Lines[i][5])
 	}
 }
 
@@ -213,4 +197,23 @@ function Open() {
 	else {
 		alert("Your browser does not support Local Storage")
 	}
+}
+
+function openCanvasSizer() {
+	document.getElementById('canvasSizer').className = "display";
+}
+
+function canvasSizer(width, height){
+	width = document.getElementById("width").value;
+	height = document.getElementById("height").value;
+	document.getElementById("canvasEditor").width = width;
+	document.getElementById("canvasEditor").height = height;
+	document.getElementById('canvasSizer').className = "notDisplay";
+
+	CanvasDrow();
+}
+
+function hideCanvasSizer(){
+	document.getElementById('canvasSizer').className = "notDisplay";
+
 }

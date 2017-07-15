@@ -1,0 +1,14 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "LaBay",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.15.0"
+  }
+}

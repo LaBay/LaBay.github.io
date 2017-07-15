@@ -4,13 +4,13 @@
 	<title>Canvas editor</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/script.js" defer></script>
+	<script type="text/javascript" src="js/build.js" defer></script>
 </head>
 <body>
 	
 	<div class="wrapper">
 
-		<canvas id="canvasEditor" width = "800"	height = "400" onmousemove="getCoordsHover()" onclick="getCoordsClick()" >Your browser does not support the HTML5 canvas tag.</canvas>
+		<canvas id="canvasEditor" width = "800"	height = "400" onmousemove="Manager.onmousemove()" onclick="Manager.onclick()" >Your browser does not support the HTML5 canvas tag.</canvas>
 	</div>
 		<div class="menu">
 
@@ -25,13 +25,14 @@
 				<input id="lineWidth" type="number" value="1"><br>
 				Press to set the color of the line
 				<input id="lineColor" type="color" value="#ff0000"><br>
-				<input type="button" value="Draw" onclick="handDrow()"> 
-				<input type="button" value="Reset" onclick="Reset()"> 
-				<input type="button" value="Undo" onclick="Undo()"> 
-				<input type="button" value="Redo" onclick="Redo()"> 
-				<input type="button" value="Save" onclick="Save()">
-				<input type="button" value="Open" onclick="Open()">
-				<input type="button" value="Canvas size" onclick="openCanvasSizer()">
+				<input type="button" value="Draw" onclick="Manager.Draw()">
+				<input type="button" value="Reset" onclick="Manager.Reset()">
+				<input type="button" value="Undo" onclick="Manager.Undo()">
+				<input type="button" value="Redo" onclick="Manager.Redo()">
+				<input type="button" value="Save" onclick="Manager.Save()">
+				<input type="button" value="Open" onclick="Manager.Open()">
+				<input type="button" value="Canvas size" onclick="Manager.CanvasSize()">
+				
 
 			</form> 
 
@@ -39,7 +40,7 @@
 
 				<input id="width" type="number" placeholder="Set Canvas' width" value="800">
 				<input id="height" type="number" placeholder="Set Canvas' height" value="400">
-				<input type="button" value="Accept" onclick="canvasSizer()"><input type="button" value="Cancel" onclick="hideCanvasSizer()">
+				<input type="button" value="Accept" onclick="controller.model.Implementer.canvasSizer()"><input type="button" value="Cancel" onclick="controller.model.Implementer.hideCanvasSizer()">
 				
 			</form>
 			

@@ -52,9 +52,12 @@
 header{
 	@include section;
 	position: relative;
-	background: #f5f5f5;
 	padding-top: 80px;
 	height: 920px;
+	background: linear-gradient(rgba(245, 245, 245, 1) 50%,  rgba(245, 245, 245, 0.1) ), url('../../backgrounds/bg.jpg') ;
+	background-position: bottom right;
+	background-repeat: no-repeat ;
+	background-size: contain;
 }
 
 .logo{

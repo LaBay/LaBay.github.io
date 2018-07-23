@@ -261,7 +261,8 @@ nav {
   text-transform: uppercase;
   border-bottom: 1px solid #c6c6c6;
   transition: height 0.5s;
-  background-color: white; }
+  background-color: white;
+  z-index: 100; }
 
 .frstMenu-item::before {
   content: '＋';
@@ -539,7 +540,7 @@ nav {
   border-left: none;
   border-top: none;
   background-color: transparent;
-  z-index: 10;
+  z-index: 1;
   color: transparent;
   outline: none;
   cursor: pointer;
@@ -1088,11 +1089,11 @@ footer {
       background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0) 50%); }
   .owl-prev {
     left: 15px;
-    z-index: 100;
+    z-index: 10;
     border-color: black; }
   .owl-next {
     right: 15px;
-    z-index: 100;
+    z-index: 15;
     border-color: black; }
   /*************************/
   .carousel-wrapper {
